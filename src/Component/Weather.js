@@ -10,7 +10,7 @@ export default function Weather() {
   let handleSubmit = async (event) => {
     setIsloading(true)
 
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d67619db77416206g8f2340877e0aaff&units=metric`
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d67619db77416203633c430877e0aaff&units=metric`
 
     let data = await fetch(url);
     let parsedData = await data.json()
